@@ -1,7 +1,5 @@
 # Introduction To Python Programming : Part 1
 
-![title](images/python3/python.png)
-
 Python is the most popular language used for porgramming in the data science domain and a major reason for this is because of it's simplicity. While Python focuses on simplicity and ease of use, at the same time it sacrifices on speed, safety etc. However as a data scientist issues like safety and speed are not of much importance to us right now and when they do, we will use other frameworks designed specifically for production level systems.
 
 In this tutorial we will go through basic Python programming techniques that will be essential in getting started with machine learning, deep learning, data visualization and other data science related programming tasks. This guide is however not comprehensive. It is just a means to get ourselves comfortable with Python. For an in depth Python tutorial you can always refer the officical Python documentation.
@@ -381,8 +379,6 @@ So we get an error which was expected because string representations of numbers 
 
 We can open a file using `open(filename)`, close the file using `object.close()` and read the entire contents of the file using `object.read()` commands. Let us first go through some examples and then figure out how basics of file handling works.
 
-![title](images/python3/files.png)
-
 
 ```python
 # Specify the filename (wrong filename throws error)
@@ -466,8 +462,6 @@ txt.close()
 - `target.seek(k)` will move the read/write head to the k-1 character in the file. However if k > n (where n is the total number of characters in the file) it will print an empty file.
 - `target.seek(-1)` will result in an error and the same is true for any negative value.
 - `target.seek(expr)` will move the read/write head to the result of expr-1 (where expr is a mathematical expression and it is evaluated first before moving the pointer. However if the result of expr < 0 then it will throw an error.
-
-![title](images/python3/file_handling.png)
 
 
 ```python
@@ -811,8 +805,6 @@ Strings in Python are represented by alphanumeric set of characters and can be n
 - **Boolean**
 Boolean values in Python are those which have only 2 values. In Python it is represented using `bool` keyword and contains `True` or `False` values.
 
-![title](images/python3/dtypes.png)
-
 
 ```python
 # Boolean data example
@@ -842,7 +834,6 @@ The body of both the loops contain instructions which we have to execute repeate
  * As long as the conditional expression evaluates to *True* the while loop executes and halts immediately when the expression evaluates to *False*.
  * This loop does not create a temporary buffer for iteration and can therefore we used for selective iteration.
 
-![title](images/python3/loops.png)
 
 
 ```python
@@ -1152,7 +1143,6 @@ Consider the following example (we will be using the first `foo()` function as a
 
 In the above example, we executed the `foo()` function twice, once inside the `if` statement block and the again inside the `while` statement block in the end. This is called calling a function. 
 
-![title](images/python3/functions.png)
 
 
 ```python
@@ -1550,7 +1540,6 @@ Now that we know how to distinguish between syntax errors and exceptions let us 
 
 The `try` and `except` block in Python are used to *catch and handle* exceptions. *Catching* an exception means to detect an exception when it occurs and *handling* and exception means to take appropriate steps after detection of exception to prevent the program from crashing. This enables the program to carry out normal execution even after an exception occurs.
 
-![title](images/python3/try_except_50.png)
 
 In the `try` block Python runs the *normal* code ie. the regular instructions that are a part of the program. In the `except` block we include code that handles any exceptions that might occur in the preceeding `try` block. It is important to note that only the code which handles the exception goes into the `except` block. Let us see this with an example:
 
@@ -1696,8 +1685,6 @@ Here are some important points to remember:
 
 Python allows us to execute a certain piece of code if there are no exceptions using the `else` statement. This is a useful way to handle multiple exceptions that might arise in the try block or if the code gets skipped (in a try block) due to some earlier exception.
 
-![title](images/python3/try_except_else_50.png)
-
 
 ```python
 # Consider an earlier example
@@ -1806,7 +1793,6 @@ except:
 
 The `finally` clause ensures that Python **always** runs some code after `try-except` execution. This is mostly used for cleaning up operations but the code in `finally` will always run with or without any previously encountered exceptions.
 
-![title](images/python3/try_except_else_finally_50.png)
 
 
 ```python
