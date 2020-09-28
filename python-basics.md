@@ -381,7 +381,7 @@ So we get an error which was expected because string representations of numbers 
 
 We can open a file using `open(filename)`, close the file using `object.close()` and read the entire contents of the file using `object.read()` commands. Let us first go through some examples and then figure out how basics of file handling works.
 
-![title](images/python3/files.jpg)
+![title](images/python3/files.png)
 
 
 ```python
